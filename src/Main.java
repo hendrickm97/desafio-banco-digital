@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        
+
         Cliente cliente1 = new Cliente();
         cliente1.setNome("Hendrick");
 
@@ -32,11 +32,14 @@ public class Main {
 
         cc.imprimirExtrato();
         poupanca.imprimirExtrato();
+        ((ContaPoupanca) poupanca).renderJuros();
 
         cc2.imprimirExtrato();
         poupanca2.imprimirExtrato();
+        ((ContaPoupanca) poupanca2).renderJuros();
 
         cc3.imprimirExtrato();
         poupanca3.imprimirExtrato();
+        ((ContaPoupanca) poupanca3).renderJuros();
     }
 }
